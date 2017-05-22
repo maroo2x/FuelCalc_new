@@ -25,4 +25,10 @@
     <string name="lower_milage">Przebieg mniejszy niż poprzedni</string>
     <string name="no_entries">Brak wpisów</string>
     <string name="entry_added">Wpis dodany</string>
+    <string name="remove_car_question">Chcesz usunąć ten pojazd i wszystkie jego tankowania?</string>
+    <string name="entry_nr_1">Pojazd nr</string>
+    <string name="entry_nr_2">usunięty.</string>
+    <string name="remove_entry_question">Usunąć ten wpis?</string>
+    <string name="remove_entry_nr_1">Wpis nr</string>
+    <string name="remove_entry_nr_2">usunięty</string>
 </resources>

@@ -33,10 +33,9 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
     private LayoutInflater mInflater;
     private int mViewResourceId;
     DbAdapter myDB;
-    Context context;
-    final String remove_car_question = context.getString(R.string.remove_car_question);
-    final String entry_nr_1 = context.getString(R.string.entry_nr_1);
-    final String entry_nr_2 = context.getString(R.string.entry_nr_2);
+    final String remove_entry_question = getContext().getString(R.string.remove_entry_question);
+    final String remove_entry_nr_1 = getContext().getString(R.string.remove_entry_nr_1);
+    final String remove_entry_nr_2 = getContext().getString(R.string.remove_entry_nr_2);
 
 
     public CustomAdapter(Context context, int textViewResourceId, ArrayList<FuelDb> entries) {
@@ -66,6 +65,7 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
 
                                       @Override
                                       public void onClick(View v) {
+
                                           //myDB = new DbAdapter(getContext(), null, null, 1);
                                           //myDB.deleteEntry(fuelDb);
                                           //Toast.makeText(getContext(), "Wpis nr " + (position + 1) + " usunięty.", Toast.LENGTH_SHORT).show();
@@ -75,14 +75,14 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
                                           new AlertDialog.Builder(getContext())
                                                  // .setTitle("Potwierdź")
 
-                                                  .setMessage(remove_car_question)
+                                                  .setMessage(remove_entry_question)
                                                   .setIcon(android.R.drawable.ic_dialog_alert)
                                                   .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
                                                       public void onClick(DialogInterface dialog, int whichButton) {
                                                           myDB = new DbAdapter(getContext(), null, null, 1);
                                                           myDB.deleteEntry(fuelDb);
-                                                          Toast.makeText(getContext(), entry_nr_1+" " + (position + 1) + " "+entry_nr_2, Toast.LENGTH_SHORT).show();
+                                                          Toast.makeText(getContext(), remove_entry_nr_1+" " + (position + 1) + " "+remove_entry_nr_2, Toast.LENGTH_SHORT).show();
                                                           entries.remove(position);
                                                           notifyDataSetChanged();
                                                       }})

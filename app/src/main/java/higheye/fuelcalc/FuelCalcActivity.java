@@ -88,7 +88,7 @@ public class FuelCalcActivity extends Activity {
 
     // add an entry to the database
     public void newEntry(View view) {
-        String enter_data = getString(R.string.enter_data);
+        String enter_data =  getString(R.string.enter_data);
         String lower_milage = getString(R.string.lower_milage);
         String entry_added = getString(R.string.entry_added);
         if (checkBox.isChecked()) {

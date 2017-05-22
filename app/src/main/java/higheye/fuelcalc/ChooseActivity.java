@@ -27,7 +27,7 @@ public class ChooseActivity extends Activity {
         cars = new ArrayList<>();
         Cursor data = myDB.listCars();
         int numRows = data.getCount();
-        String add_car = getString(R.string.add_car);
+        final String add_car = getString(R.string.add_car);
         if (numRows == 0) {
             Toast.makeText(ChooseActivity.this, add_car, Toast.LENGTH_LONG).show();
         } else {
@@ -45,17 +45,21 @@ public class ChooseActivity extends Activity {
     }
 
     public void addCar(View view){
+        String enter_data =  getString(R.string.enter_data);
+        String car_added = getString(R.string.car_added);
         FuelDb fuelDb = new FuelDb(fieldCar.getText().toString());
 //        fieldCar.getText().toString();
-        String enter_data = this.getString(R.string.enter_data);
-        String car_added = getString(R.string.car_added);
+//        String enter_data = this.getString(R.string.enter_data);
+//        String car_added = this.getString(R.string.car_added);
         if (fieldCar.length()==0) {
+//            Toast.makeText(this, enter_data, Toast.LENGTH_LONG).show();
             Toast.makeText(this, enter_data, Toast.LENGTH_LONG).show();
         }
         else {
             myDB.newCar(fuelDb.getCar());
             fieldCar.setText("");
             Toast.makeText(this, car_added, Toast.LENGTH_LONG).show();
+ //           Toast.makeText(this, entry_added, Toast.LENGTH_LONG).show();
             finish();
             startActivity(getIntent());
         }

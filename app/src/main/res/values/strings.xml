@@ -25,10 +25,11 @@
     <string name="add_car">Add car</string>
     <string name="lower_milage">Milage lower than last one</string>
     <string name="no_entries">No entries</string>
-    <string name="remove_car_question">Entry added</string>
-    <string name="entry_nr_1">Entry added</string>
-    <string name="entry_nr_2">Entry added</string>
-    <string name="remove_entry_question">Usunąć ten pojazd i wszystkie jego tankowania?</string>
+    <string name="entry_added">Entry added</string>
+    <string name="remove_car_question">Do you want to remove that car with all its refuels?</string>
+    <string name="entry_nr_1">Car nr</string>
+    <string name="entry_nr_2">removed.</string>
+    <string name="remove_entry_question">Remove that entry?</string>
     <string name="remove_entry_nr_1">Entry nr</string>
     <string name="remove_entry_nr_2">removed</string>
 

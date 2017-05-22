@@ -28,10 +28,9 @@ class CarsCustomAdapter extends ArrayAdapter<FuelDb> {
     private LayoutInflater mInflater;
     private int mViewResourceId;
     DbAdapter myDB;
-    Context context;
-    final String remove_entry_question = context.getString(R.string.remove_entry_question);
-    final String remove_entry_nr_1 = context.getString(R.string.remove_entry_nr_1);
-    final String remove_entry_nr_2 = context.getString(R.string.remove_entry_nr_2);
+    final String remove_car_question = getContext().getString(R.string.remove_car_question);
+    final String entry_nr_1 = getContext().getString(R.string.entry_nr_1);
+    final String entry_nr_2 = getContext().getString(R.string.entry_nr_2);
 
     public CarsCustomAdapter(Context context, int textViewResourceId, ArrayList<FuelDb> cars) {
         super(context, R.layout.cars_custom_row, cars);
@@ -75,7 +74,7 @@ class CarsCustomAdapter extends ArrayAdapter<FuelDb> {
                                       public void onClick(View v) {
                                           new AlertDialog.Builder(getContext())
                                                   // .setTitle("Potwierdź")
-                                                  .setMessage(remove_entry_question)
+                                                  .setMessage(remove_car_question)
                                                   .setIcon(android.R.drawable.ic_dialog_alert)
                                                   .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
 
@@ -83,7 +82,7 @@ class CarsCustomAdapter extends ArrayAdapter<FuelDb> {
                                                           myDB = new DbAdapter(getContext(), null, null, 1);
                                                           myDB.deleteEntries(fuelDb);
                                                           myDB.deleteCar(fuelDb);
-                                                          Toast.makeText(getContext(), remove_entry_nr_1+" " + (position + 1) + " "+remove_entry_nr_2+".", Toast.LENGTH_SHORT).show();
+                                                          Toast.makeText(getContext(), entry_nr_1+" " + (position + 1) + " "+entry_nr_2+".", Toast.LENGTH_SHORT).show();
                                                           cars.remove(position);
                                                           notifyDataSetChanged();
                                                       }})
