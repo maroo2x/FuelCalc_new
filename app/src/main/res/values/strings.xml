@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FuelCalc</string>
+    <string name="action_settings">Settings</string>
+    <string name="var">zmienna</string>
+    <string name="delete_button">delete</string>
+    <string name="add_car_button">add</string>
+    <string name="srednie_spalanie">avg fuel consumption per 100 km/mi</string>
+    <string name="do_pelna">full tank</string>
+    <string name="results_button">Results</string>
+    <string name="save_button">save</string>
+    <string name="pojazd">car</string>
+    <string name="entry_field_km">Milage</string>
+    <string name="new_entry">New entry</string>
+    <string name="entry_field_fuel">Tanked quantity</string>
+    <string name="new_entry_text">New refuel:</string>
+    <string name="del_entry_button">delete</string>
+    <string name="date">date</string>
+    <string name="choose_car">choose car</string>
+    <string name="choose_car2">CHOOSE CAR</string>
+    <string name="mileage">milage</string>
+    <string name="fuel_quantity">fuel quantity</string>
+    <string name="full">full tank</string>
+    <string name="enter_data">Enter data</string>
+    <string name="car_added">Car added</string>
+    <string name="add_car">Add car</string>
+    <string name="lower_milage">Milage lower than last one</string>
+    <string name="no_entries">No entries</string>
+    <string name="remove_car_question">Entry added</string>
+    <string name="entry_nr_1">Entry added</string>
+    <string name="entry_nr_2">Entry added</string>
+    <string name="remove_entry_question">Usunąć ten pojazd i wszystkie jego tankowania?</string>
+    <string name="remove_entry_nr_1">Entry nr</string>
+    <string name="remove_entry_nr_2">removed</string>
+
+</resources>

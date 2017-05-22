@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">FuelCalc</string>
+    <string name="action_settings">Settings</string>
+    <string name="var">zmienna</string>
+    <string name="delete_button">usuń</string>
+    <string name="add_car_button">dodaj pojazd</string>
+    <string name="srednie_spalanie">średnie spalanie (l/100km)</string>
+    <string name="do_pelna">do pełna</string>
+    <string name="results_button">Wyniki</string>
+    <string name="save_button">zapisz</string>
+    <string name="pojazd">pojazd</string>
+    <string name="entry_field_km">Aktualny przebieg</string>
+    <string name="new_entry">nowy wpis</string>
+    <string name="entry_field_fuel">ilość paliwa</string>
+    <string name="new_entry_text">Nowe tankowanie:</string>
+    <string name="del_entry_button">usuń</string>
+    <string name="date">data</string>
+    <string name="choose_car">wybierz pojazd</string>
+    <string name="mileage">przebieg</string>
+    <string name="fuel_quantity">Ilość paliwa</string>
+    <string name="full">do pełna</string>
+    <string name="enter_data">Wprowadź dane</string>
+    <string name="car_added">Pojazd dodany</string>
+    <string name="add_car">Dodaj pojazd.</string>
+    <string name="lower_milage">Przebieg mniejszy niż poprzedni</string>
+    <string name="no_entries">Brak wpisów</string>
+    <string name="entry_added">Wpis dodany</string>
+</resources>
