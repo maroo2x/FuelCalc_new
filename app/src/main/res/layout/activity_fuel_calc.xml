@@ -19,7 +19,7 @@
             android:background="?attr/colorPrimary"
             android:paddingEnd="0dp"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="Kalkulator Spalania" />
+            app:title="FuelCalc" />
 
     </android.support.design.widget.AppBarLayout>
 
