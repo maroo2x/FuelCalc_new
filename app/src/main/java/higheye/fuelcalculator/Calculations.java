@@ -1,9 +1,6 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 import android.database.Cursor;
-import android.content.Context;
-
-import static java.security.AccessController.getContext;
 
 
 /**

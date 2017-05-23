@@ -1,4 +1,4 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 import org.junit.Test;
 

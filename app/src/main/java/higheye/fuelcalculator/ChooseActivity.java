@@ -1,4 +1,4 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 import android.app.Activity;
 import android.database.Cursor;

@@ -1,31 +1,16 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.app.Activity;
-import android.text.TextUtils;
-import android.view.Menu;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
-import java.util.Scanner;
-import java.io.IOException;
-
-import android.content.Context;
 import android.content.Intent;
 import android.widget.Toast;
-
-import java.util.Arrays;
-import java.util.regex.Pattern;
 
 
 public class FuelCalcActivity extends Activity {

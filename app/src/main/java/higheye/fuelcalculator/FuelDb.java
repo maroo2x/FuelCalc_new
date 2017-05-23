@@ -1,4 +1,4 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 /**
  * Created by mkurdziel on 16.01.2017.

@@ -1,10 +1,9 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.provider.BaseColumns;
 
 /**
  * Created by mkurdziel on 1/23/17.

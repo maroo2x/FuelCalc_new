@@ -1,4 +1,4 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 import android.os.Bundle;
 import android.app.Activity;

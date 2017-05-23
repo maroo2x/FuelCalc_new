@@ -1,4 +1,4 @@
-package higheye.fuelcalc;
+package higheye.fuelcalculator;
 
 /**
  * Created by mkurdziel on 3/1/17.
@@ -15,13 +15,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.app.Activity;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
-import java.util.NavigableSet;
 
 class CarsCustomAdapter extends ArrayAdapter<FuelDb> {
     private ArrayList<FuelDb> cars;
