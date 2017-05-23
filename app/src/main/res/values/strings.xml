@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FuelCalc</string>
+    <string name="app_name">Fuel Calculator</string>
     <string name="action_settings">Settings</string>
     <string name="var">zmienna</string>
     <string name="delete_button">delete</string>
