@@ -51,7 +51,7 @@ public class DbAdapter extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_CARS);
 
         ContentValues values = new ContentValues();
-        values.put(COLUMN_CARNAME, "Domyślny pojazd");
+        values.put(COLUMN_CARNAME, "DEFAULT_CAR");
         values.put(COLUMN_DEFAULT, "1");
         db.insert(TABLE_CARS, null, values);
     }
