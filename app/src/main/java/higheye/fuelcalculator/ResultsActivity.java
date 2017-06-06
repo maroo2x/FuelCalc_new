@@ -43,6 +43,11 @@ public class ResultsActivity extends Activity {
 
         }
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
     //find current carID
     public int getCarID() {
         Cursor c = myDB.getCurrentCar();

@@ -4,6 +4,7 @@ package higheye.fuelcalculator;
  * Created by mkurdziel on 3/1/17.
  */
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -58,10 +59,14 @@ class CarsCustomAdapter extends ArrayAdapter<FuelDb> {
 //                Intent intent = new Intent(context, FuelCalcActivity.class);
 //                ((FuelCalcActivity)context).startActivity(intent);
 //                onBackPressed();
+// ChooseActivity chooseActivity = new ChooseActivity();
+//                chooseActivity.onBackPressed();
                 Intent intent = new Intent(context, FuelCalcActivity.class);
                context.startActivity(intent);
+
             }
         });
+
 
         //delete listed car when press the button
         Button delbutton = (Button) convertView.findViewById(R.id.del_button);

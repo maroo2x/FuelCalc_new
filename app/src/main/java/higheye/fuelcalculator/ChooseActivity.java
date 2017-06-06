@@ -60,14 +60,13 @@ public class ChooseActivity extends Activity {
             fieldCar.setText("");
             Toast.makeText(this, car_added, Toast.LENGTH_LONG).show();
  //           Toast.makeText(this, entry_added, Toast.LENGTH_LONG).show();
-            finish();
-            startActivity(getIntent());
+onBackPressed();
         }
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //    finish();
+            finish();
     }
 
 }
