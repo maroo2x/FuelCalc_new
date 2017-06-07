@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Fuel Calculator</string>
     <string name="action_settings">Settings</string>
-    <string name="var">zmienna</string>
+    <string name="var">var</string>
     <string name="delete_button">delete</string>
     <string name="add_car_button">add</string>
     <string name="srednie_spalanie">avg fuel consumption per 100 km/mi</string>
