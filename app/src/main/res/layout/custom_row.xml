@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/listView">
 
     <TextView
-        android:text="@string/var"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
         android:id="@+id/rowResult1"
-        android:layout_weight="0.24" />
-
-    <TextView
         android:text="@string/var"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.24"
-        android:id="@+id/rowResult2" />
+        android:layout_weight="0.20" />
 
     <TextView
-        android:text="@string/var"
-        android:layout_width="wrap_content"
-        android:layout_height="42dp"
+        android:id="@+id/rowResult2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:text="@string/var" />
+
+    <TextView
         android:id="@+id/rowResult3"
-        android:layout_weight="0.24" />
+        android:text="@string/var"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25" />
 
     <TextView
-        android:text="@string/var"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/full_id"
-        android:layout_weight="0.07" />
+        android:text="@string/var"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
 
     <Button
-        android:text="@string/del_entry_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button_del"
+        android:text="@string/del_entry_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
         android:onClick="newEntry (FuelCalcActivity)" />
 </LinearLayout>
