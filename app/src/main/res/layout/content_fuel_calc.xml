@@ -14,6 +14,70 @@
     tools:showIn="@layout/activity_fuel_calc">
 
     <TextView
+        android:id="@+id/textViewCar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/results"
+        android:text="@string/var"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/car_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/results"
+        android:layout_alignBottom="@+id/results"
+        android:layout_toLeftOf="@+id/results"
+        android:layout_toStartOf="@+id/results"
+        android:onClick="chooseCar"
+        android:text="@string/pojazd" />
+
+    <Button
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:onClick="showResults"
+        android:text="@string/results_button" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_entry_text"
+        android:textSize="36sp"
+        android:layout_below="@+id/car_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/entry_field_km"
+        android:textSize="24sp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/polePrzebieg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="200dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
@@ -24,37 +88,27 @@
         android:text="@string/entry_field_fuel"
         android:textSize="24sp" />
 
-    <TextView
-        android:text="@string/srednie_spalanie"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/poleLitry"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_marginTop="34dp"
-        android:textSize="18sp"
-        android:layout_below="@+id/checkBox"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/polePrzebieg"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/polePrzebieg"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
 
     <CheckBox
-        android:text="@string/do_pelna"
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox"
-        android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
-
-    <Button
-        android:text="@string/results_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/results"
-        android:onClick="showResults"
-        android:layout_marginTop="64dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="22dp"
+        android:text="@string/do_pelna" />
 
     <Button
         android:text="@string/save_button"
@@ -66,39 +120,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number|numberDecimal"
-        android:ems="10"
-        android:id="@+id/poleLitry"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/polePrzebieg"
-        android:layout_alignStart="@+id/polePrzebieg" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/polePrzebieg"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="200dp" />
-
-    <Button
-        android:text="@string/pojazd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/car_button"
-        android:onClick="chooseCar"
-        android:layout_alignBottom="@+id/results"
-        android:layout_toRightOf="@+id/textView8"
-        android:layout_toEndOf="@+id/textView8"
-        android:layout_alignTop="@+id/results" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="34dp"
+        android:text="@string/srednie_spalanie"
+        android:textSize="18sp" />
 
     <TextView
         android:text="@string/var"
@@ -109,39 +140,6 @@
 
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@+id/car_button"
-        android:layout_marginTop="89dp"
-        android:text="@string/entry_field_km"
-        android:textSize="24sp"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_alignEnd="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/textViewCar"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/results"
-        android:text="@string/var"
-        android:textSize="24sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/new_entry_text"
-        android:textSize="36sp"
-        android:id="@+id/textView8"
-        android:layout_above="@+id/polePrzebieg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
