@@ -2,36 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/listView">
 
     <TextView
         android:id="@+id/rowResult1"
-        android:text="@string/var"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.20" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.22"
+        android:gravity="right"
+        android:text="@string/var"
+        android:textAlignment="gravity" />
 
     <TextView
         android:id="@+id/rowResult2"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.20"
-        android:text="@string/var" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.18"
+        android:background="@color/colorCustomList1"
+        android:gravity="right"
+        android:text="@string/var"
+        android:textAlignment="gravity" />
 
     <TextView
         android:id="@+id/rowResult3"
-        android:text="@string/var"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.25" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:gravity="right"
+        android:text="@string/var"
+        android:textAlignment="gravity" />
 
     <TextView
         android:id="@+id/full_id"
-        android:text="@string/var"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15" />
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:background="@color/colorCustomList1"
+        android:gravity="right"
+        android:text="@string/var"
+        android:textAlignment="gravity" />
 
     <Button
         android:id="@+id/button_del"
@@ -39,5 +49,5 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.20"
-        android:onClick="newEntry (FuelCalcActivity)" />
+        android:onClick="newEntry (FuelCalcActivity)"/>
 </LinearLayout>
