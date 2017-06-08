@@ -14,12 +14,12 @@
     <string name="entry_field_fuel">Tanked quantity</string>
     <string name="new_entry_text">New refuel:</string>
     <string name="del_entry_button">delete</string>
-    <string name="date">date</string>
+    <string name="date">DATE</string>
     <string name="choose_car">choose car</string>
     <string name="choose_car2">CHOOSE CAR</string>
-    <string name="mileage">mileage</string>
-    <string name="fuel_quantity">fuel quantity</string>
-    <string name="full">full tank</string>
+    <string name="mileage">MILEAGE</string>
+    <string name="fuel_quantity">FUEL QUANTITY</string>
+    <string name="full">FULL TANK</string>
     <string name="enter_data">Enter data</string>
     <string name="car_added">Car added</string>
     <string name="add_car">Add car</string>
