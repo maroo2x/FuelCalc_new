@@ -17,9 +17,10 @@
     <string name="date">data</string>
     <string name="choose_car">wybierz pojazd</string>
     <string name="choose_car2">WYBIERZ POJAZD</string>
-    <string name="mileage">przebieg</string>
+    <string name="mileage">PRZEBIEG</string>
     <string name="fuel_quantity">Ilość paliwa</string>
-    <string name="full">do pełna</string>
+    <string name="full">DO PEŁNA</string>
+    <string name="avgcons">ŚR. SPALANIE</string>
     <string name="enter_data">Wprowadź dane</string>
     <string name="car_added">Pojazd dodany</string>
     <string name="add_car">Dodaj pojazd.</string>
@@ -32,4 +33,6 @@
     <string name="remove_entry_question">Usunąć ten wpis?</string>
     <string name="remove_entry_nr_1">Wpis nr</string>
     <string name="remove_entry_nr_2">usunięty</string>
+    <string name="yes">tak</string>
+    <string name="no">nie</string>
 </resources>

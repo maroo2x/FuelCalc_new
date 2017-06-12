@@ -12,6 +12,7 @@ public class FuelDb {
     private int full;
     private String car;
     private int carId;
+    private float tempAverage;
 
     public FuelDb(int carId, String car) {
         this.carId = carId;
@@ -35,6 +36,13 @@ public class FuelDb {
         this._datetime = _datetime;
         this.full = full;
     }
+    public FuelDb(int _id, int _przebieg, float _tankowanie, long _datetime, int full, float tempAverage) {
+        this._id = _id;
+        this._przebieg = _przebieg;
+        this._tankowanie = _tankowanie;
+        this._datetime = _datetime;
+        this.tempAverage = tempAverage;
+    }
 
     public long getId() {
         return _id;
@@ -56,6 +64,7 @@ public class FuelDb {
         return _tankowanie;
     }
     public int getFull() {return full;}
+    public float getAverage() {return tempAverage;}
 
     public void setTankowanie(float _tankowanie) {
         this._tankowanie = _tankowanie;

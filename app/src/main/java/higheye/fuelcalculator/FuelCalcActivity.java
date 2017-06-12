@@ -125,6 +125,7 @@ public class FuelCalcActivity extends Activity {
             } else {
                 if (Integer.parseInt(polePrzebieg.getText().toString()) < lastP) {
                     Toast.makeText(this, lower_milage + " (" + lastP + ")", Toast.LENGTH_LONG).show();
+                    return;
                 }
                 FuelDb fuelDb = new FuelDb(Integer.parseInt(polePrzebieg.getText().toString()), Float.parseFloat(poleLitry.getText().toString()), full, getCarID());
                 myDB.addEntry(fuelDb);

@@ -5,6 +5,7 @@ package higheye.fuelcalculator;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,6 +53,7 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
         TextView text3 = (TextView) convertView.findViewById(R.id.rowResult3);
         TextView text4 = (TextView) convertView.findViewById(R.id.full_id);
         Button button = (Button) convertView.findViewById(R.id.button_del);
+        float tempAverage;
   //     final CustomAdapter adapter = new CustomAdapter(this, R.layout.custom_row, entries)
  //       final View finalConvertView = convertView;
         button.setOnClickListener(new View.OnClickListener() {
@@ -95,18 +97,21 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
             text2.setText(Integer.toString(fuelDb.getPrzebieg())); //Integer.toString(fuelDb.getPrzebieg()));
         }
         if (text3 != null) {
-            text3.setText(Float.toString(fuelDb.getTankowanie())); //Float.toString(fuelDb.getTankowanie()));
+            text3.setText(String.format("%.2f", fuelDb.getTankowanie()));
+//            text3.setText(Float.toString(fuelDb.getTankowanie())); //Float.toString(fuelDb.getTankowanie()));
         }
 /*        if (text4 != null) {
             text4.setText(Integer.toString(fuelDb.getFull())); //Float.toString(fuelDb.getTankowanie()));
         }*/
         if (text4 != null) {
-            if (fuelDb.getFull() == 1) {
-                text4.setText("yes");
-            }
-            else {text4.setText("no");}
-        }
+            text4.setText(String.format("%.2f", fuelDb.getAverage()));
 
+
+            /*           if (fuelDb.getFull() == 1) {
+                text4.setText(getContext().getString(R.string.yes));
+            }
+            else {text4.setText(getContext().getString(R.string.no));}
+*/}
         return convertView;
     }
 }

@@ -41,14 +41,14 @@
         android:gravity="center"
         android:textAlignment="gravity"/>
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.15"
-        android:text="@string/full"
-        android:gravity="center"
-        android:textAlignment="gravity"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:text="@string/avgcons"
+            android:textAlignment="gravity" />
 
         <TextView
             android:id="@+id/textView8"

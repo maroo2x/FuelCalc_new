@@ -30,9 +30,35 @@ public class ResultsActivity extends Activity {
             Toast.makeText(ResultsActivity.this, no_entries, Toast.LENGTH_LONG).show();
         } else {
             int i = 0;
+            int prevMilage = 0;
+            float tempAverage = 0;
+            float lastFullQuantity = 0;
             while (data.moveToNext()) {
-                fuelDb = new FuelDb(data.getInt(0), data.getInt(1), data.getFloat(2), data.getLong(3), data.getInt(4));
+//                fuelDb = new FuelDb(data.getInt(0), data.getInt(1), data.getFloat(2), data.getLong(3), data.getInt(4));
+
+                if (data.getInt(4) == 0 && prevMilage == 0){
+                    tempAverage = 0;
+                }
+                else if (data.getInt(4) == 1 && prevMilage == 0) {
+                    tempAverage = 0;
+                    prevMilage = data.getInt(1);
+                }
+
+                else if (data.getInt(4) == 0 && prevMilage != 0){
+                    tempAverage = 0;
+                    lastFullQuantity += data.getFloat(2);
+                }
+
+                else if (data.getInt(4) == 1 && prevMilage != 0) {
+                    tempAverage = (data.getFloat(2)/(data.getInt(1) - prevMilage)) * 100;
+                    prevMilage = data.getInt(1);
+                    lastFullQuantity = data.getFloat(2);
+                }
+
+
+                fuelDb = new FuelDb(data.getInt(0), data.getInt(1), data.getFloat(2), data.getLong(3), data.getInt(5), tempAverage);
                 entries.add(i, fuelDb);
+
 //                System.out.println(data.getInt(1) + " " + data.getFloat(2));
 //                System.out.println(entries.get(i).getPrzebieg());
                 i++;
@@ -40,7 +66,6 @@ public class ResultsActivity extends Activity {
             CustomAdapter adapter = new CustomAdapter(this, R.layout.custom_row, entries);
             listView = (ListView) findViewById(R.id.results);
             listView.setAdapter(adapter);
-
         }
     }
     @Override
