@@ -14,13 +14,13 @@
     <string name="entry_field_fuel">ilość paliwa</string>
     <string name="new_entry_text">Nowe tankowanie:</string>
     <string name="del_entry_button">usuń</string>
-    <string name="date">data</string>
+    <string name="date">DATA</string>
     <string name="choose_car">wybierz pojazd</string>
     <string name="choose_car2">WYBIERZ POJAZD</string>
     <string name="mileage">PRZEBIEG</string>
-    <string name="fuel_quantity">Ilość paliwa</string>
+    <string name="fuel_quantity">ILOŚĆ PALIWA</string>
     <string name="full">DO PEŁNA</string>
-    <string name="avgcons">ŚR. SPALANIE</string>
+    <string name="avgcons">SPALANIE</string>
     <string name="enter_data">Wprowadź dane</string>
     <string name="car_added">Pojazd dodany</string>
     <string name="add_car">Dodaj pojazd.</string>
