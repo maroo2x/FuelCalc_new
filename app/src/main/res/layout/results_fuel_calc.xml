@@ -64,7 +64,7 @@
                 android:id="@+id/textView2x"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.22"
+                android:layout_weight="0.1"
                 android:background="@color/colorCustomList2"
                 android:gravity="center"
                 android:textAlignment="gravity" />
@@ -73,9 +73,9 @@
                 android:id="@+id/textView5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.18"
+                android:layout_weight="0.35"
                 android:background="@color/colorCustomList1"
-                android:gravity="top|right"
+                android:gravity="top|center_horizontal"
                 android:textStyle="bold"
                 android:text="@string/mileage"
                 android:textAlignment="gravity" />
@@ -84,7 +84,7 @@
                 android:id="@+id/textView6x"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.25"
+                android:layout_weight="0.1"
                 android:background="@color/colorCustomList2"
                 android:gravity="center"
                 android:textAlignment="gravity" />
@@ -93,9 +93,9 @@
                 android:id="@+id/textView7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.15"
+                android:layout_weight="0.35"
                 android:background="@color/colorCustomList1"
-                android:gravity="top|right"
+                android:gravity="top|center_horizontal"
                 android:text="@string/avgcons"
                 android:textStyle="bold"
                 android:textAlignment="gravity" />
@@ -104,7 +104,7 @@
                 android:id="@+id/textView82"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.20"
+                android:layout_weight="0.1"
                 android:gravity="center"
                 android:text=""
                 android:textAlignment="gravity" />
