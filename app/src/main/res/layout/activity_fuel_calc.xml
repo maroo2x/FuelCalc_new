@@ -27,8 +27,20 @@
             android:paddingEnd="0dp"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="@string/app_name"
-            tools:title="@string/app_name" />
+            tools:title="@string/app_name"
+            android:layout_marginRight="0dp"
+            android:paddingRight="0dp" />
 
     </android.support.design.widget.AppBarLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9181728221541409/1778446776">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

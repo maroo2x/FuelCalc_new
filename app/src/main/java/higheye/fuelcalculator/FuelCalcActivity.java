@@ -1,22 +1,24 @@
 package higheye.fuelcalculator;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import android.content.Intent;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class FuelCalcActivity extends Activity {
+    private AdView mAdView;
     EditText polePrzebieg;
     EditText poleLitry;
     TextView ResultsTextView;
@@ -26,6 +28,7 @@ public class FuelCalcActivity extends Activity {
     int full;
     CheckBox checkBox;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,10 @@ public class FuelCalcActivity extends Activity {
         poleLitry = (EditText) findViewById(R.id.poleLitry);
         ResultsTextView = (TextView) findViewById(R.id.ResultsTextView);
         TextViewCar = (TextView) findViewById(R.id.textViewCar);
+        MobileAds.initialize(this, "ca-app-pub-9181728221541409~9301713574");
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         myDB = new DbAdapter(this, null, null, 1);
         checkBox = (CheckBox) findViewById(R.id.checkBox);
         checkBox.setChecked(true);
