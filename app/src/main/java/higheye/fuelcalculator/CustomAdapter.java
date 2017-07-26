@@ -4,17 +4,15 @@ package higheye.fuelcalculator;
  * Created by mkurdziel on 3/1/17.
  */
 
+import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-
 import android.widget.Toast;
 
 import java.text.DateFormat;
@@ -37,8 +35,6 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
         this.entries = entries;
         mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mViewResourceId = textViewResourceId;
-
-
     }
 
     @Override

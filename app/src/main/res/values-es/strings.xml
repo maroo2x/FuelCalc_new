@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fuel Calculator</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="add_car">Agregar coche</string>
+    <string name="add_car_button">añadir</string>
+    <string name="avgcons">MEDIANO</string>
+    <string name="car_added">Coche añadido</string>
+    <string name="choose_car">Elegir coche</string>
+    <string name="choose_car2">ELEGIR COCHE</string>
+    <string name="date">FECHA</string>
+    <string name="del_entry_button">borrar</string>
+    <string name="delete_button">borrar</string>
+    <string name="do_pelna">tanque lleno</string>
+    <string name="enter_data">Introducir datos</string>
+    <string name="entry_added">Entrada añadida</string>
+    <string name="entry_field_fuel">Cantidad reducida</string>
+    <string name="entry_field_km">Kilometraje</string>
+    <string name="entry_nr_1">Número de coche</string>
+    <string name="entry_nr_2">remoto.</string>
+    <string name="fuel_quantity">CANTIDAD DE COMBUSTIBLE</string>
+    <string name="full">TANQUE LLENO</string>
+    <string name="lower_milage">Kilometraje inferior al anterior</string>
+    <string name="mileage">KILOMETRAJE</string>
+    <string name="new_entry">Nueva entrada</string>
+    <string name="new_entry_text">Nuevo combustible:</string>
+    <string name="no">no</string>
+    <string name="no_entries">No entrar</string>
+    <string name="pojazd">coche</string>
+    <string name="remove_car_question">¿Quieres quitar ese auto con todos sus refuels?</string>
+    <string name="remove_entry_nr_1">Entrada</string>
+    <string name="remove_entry_nr_2">remoto.</string>
+    <string name="remove_entry_question">¿Eliminar esa entrada?</string>
+    <string name="results_button">Resultados</string>
+    <string name="save_button">salvar</string>
+    <string name="srednie_spalanie">consumo de combustible por 100 km / mi</string>
+    <string name="var">variable</string>
+    <string name="yes">sí</string>
+</resources>

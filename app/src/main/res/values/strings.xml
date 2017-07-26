@@ -32,7 +32,7 @@
     <string name="entry_nr_2">removed.</string>
     <string name="remove_entry_question">Remove that entry?</string>
     <string name="remove_entry_nr_1">Entry no.</string>
-    <string name="remove_entry_nr_2">removed</string>
+    <string name="remove_entry_nr_2">removed.</string>
     <string name="yes">yes</string>
     <string name="no">no</string>
 </resources>
