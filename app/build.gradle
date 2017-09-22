@@ -7,7 +7,7 @@ android {
         applicationId "higheye.fuelcalculator"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 14
+        versionCode 15
         versionName "1.12"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

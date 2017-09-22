@@ -42,6 +42,7 @@ public class FuelDb {
         this._tankowanie = _tankowanie;
         this._datetime = _datetime;
         this.tempAverage = tempAverage;
+        this.full = full;
     }
 
     public long getId() {

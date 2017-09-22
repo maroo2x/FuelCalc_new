@@ -46,17 +46,25 @@ public class ResultsActivity extends Activity {
 
                 else if (data.getInt(4) == 0 && prevMilage != 0){
                     tempAverage = 0;
-                    lastFullQuantity += data.getFloat(2);
+                    lastFullQuantity =+ data.getFloat(2);
                 }
 
                 else if (data.getInt(4) == 1 && prevMilage != 0) {
-                    tempAverage = (data.getFloat(2)/(data.getInt(1) - prevMilage)) * 100;
+//                    find last full tanking
+
+                    tempAverage = ((data.getFloat(2)+lastFullQuantity)/(data.getInt(1) - prevMilage)) * 100;
                     prevMilage = data.getInt(1);
                     lastFullQuantity = data.getFloat(2);
                 }
-
-
-                fuelDb = new FuelDb(data.getInt(0), data.getInt(1), data.getFloat(2), data.getLong(3), data.getInt(5), tempAverage);
+/*                COLUMN_ID + " INTEGER PRIMARY KEY," +             0
+                        COLUMN_PRZEBIEG + " INT," +                 1
+                        COLUMN_TANKOWANIE + " FLOAT, " +            2
+                        COLUMN_DATETIME + " INT, " +                3
+                        COLUMN_FULL + " INT, " +                    4
+                        COLUMN_POJAZD_CAR_ID + " INT, " +           5
+                        COLUMN_STACJA + " VARCHAR);";               6
+                        */
+                fuelDb = new FuelDb(data.getInt(0), data.getInt(1), data.getFloat(2), data.getLong(3), data.getInt(4), tempAverage);
                 entries.add(i, fuelDb);
 
 //                System.out.println(data.getInt(1) + " " + data.getFloat(2));

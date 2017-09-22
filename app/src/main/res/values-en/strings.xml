@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Fuel Calculator</string>
+    <string name="app_name">FuelCalc</string>
     <string name="action_settings">Settings</string>
     <string name="add_car">Add car</string>
     <string name="add_car_button">add</string>
