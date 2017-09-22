@@ -100,8 +100,12 @@ class CustomAdapter extends ArrayAdapter<FuelDb> {
             text4.setText(Integer.toString(fuelDb.getFull())); //Float.toString(fuelDb.getTankowanie()));
         }*/
         if (text4 != null) {
-            text4.setText(String.format("%.2f", fuelDb.getAverage()));
-
+            if (fuelDb.getAverage() == 0) {
+                text4.setText("-");
+            }
+            else {
+                text4.setText(String.format("%.2f", fuelDb.getAverage()));
+            }
 
             /*           if (fuelDb.getFull() == 1) {
                 text4.setText(getContext().getString(R.string.yes));
