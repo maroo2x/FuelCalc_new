@@ -54,7 +54,7 @@ public class ResultsActivity extends Activity {
 
                     tempAverage = ((data.getFloat(2)+lastFullQuantity)/(data.getInt(1) - prevMilage)) * 100;
                     prevMilage = data.getInt(1);
-                    lastFullQuantity = data.getFloat(2);
+                    lastFullQuantity = 0;
                 }
 /*                COLUMN_ID + " INTEGER PRIMARY KEY," +             0
                         COLUMN_PRZEBIEG + " INT," +                 1
